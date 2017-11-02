@@ -13,8 +13,8 @@ export default class Navigation extends Component {
                     <div>
                         <ul className="nav navbar-nav test" >
                             <li className="active"><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">My profile</a></li>
+                            <li><a href="#">My albums</a></li>
                         </ul>
                     </div>
 
