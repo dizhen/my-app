@@ -19,7 +19,7 @@ export default class Home extends Component {
                     </div>
                 </div>
 
-                <div className="row h-100">
+                <div className="row">
                     <div className="col-lg-9 col-sm-9 col-xs-12 test">
                         <div class="card card-inverse card-primary">
                             <p>Top 10 Photographers</p>
