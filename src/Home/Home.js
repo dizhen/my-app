@@ -1,8 +1,19 @@
 import React, {Component} from 'react';
 import PhotographerInfo from './PhotographerInfo';
 import PhotographerPhoto from './PhotographerPhoto';
+import _ from 'lodash';
 
 export default class Home extends Component {
+    renderPhotographersInfo(){
+        const props = _.omit(this.props, 'photographers');
+
+        return _.map(this.props.photographers, (photographer, index) =>
+            <PhotographerInfo
+                key={index} {...photographer} {...props}
+                photographers={this.props.photographers}
+            />
+        );
+    }
     render() {
         return (
             <div className="">
@@ -26,11 +37,11 @@ export default class Home extends Component {
                     <div className="col-lg-9 col-sm-9 col-xs-12 test">
                         <div class="card card-inverse card-primary">
                             <div className="row">
-                                <div className="col-sm-3">
-                                    <PhotographerInfo></PhotographerInfo>
+                                <div className="col-sm-2 test">
+                                    {this.renderPhotographersInfo()}
                                 </div>
-                                <div className="col-sm-9">
-                                    <PhotographerPhoto></PhotographerPhoto>
+                                <div className="col-sm-10">
+                                    <PhotographerPhoto/>
                                 </div>
                             </div>
                         </div>
