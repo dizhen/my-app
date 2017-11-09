@@ -1,28 +1,42 @@
 import React, {Component} from 'react';
-import ReactStars from 'react-stars'
+import ReactStars from 'react-stars';
+import PhotographerPhoto from './PhotographerPhoto';
 
 export default class PhotographerInfo extends Component {
     constructor(props) {
         super(props);
+        this.state = {
+            loggedIn:false
+        };
     }
 
     render() {
         const photographer = this.props;
         return (
-            <div className="container">
-                <img style={{
-                    align: 'center',
-                    flex: 1,
-                    height: 100,
-                    width: 100,
-                    borderWidth: 1,
-                    borderRadius: 75
-                }}
-                     src={require('./blank-profile-picture.png')}
-                     resizeMode='contain'
-                />
-                <ReactStars value={photographer.rating}/>
-                <p align='center'>{photographer.name}</p>
+            <div className="row">
+                <div className="col-sm-2 test">
+                    <div className="container">
+                        <img style={{
+                            align: 'center',
+                            flex: 1,
+                            height: 100,
+                            width: 100,
+                            borderWidth: 1,
+                            borderRadius: 75
+                        }}
+                            src={require('./blank-profile-picture.png')}
+                            resizeMode='contain'
+                        />
+                        <ReactStars value={photographer.rating}/>
+                        <p align='center'>{photographer.name}</p>
+                    </div>
+                </div>
+                <div className="col-sm-10">
+                    <PhotographerPhoto/>
+                </div>
+                <div className="container">
+                    <p>{photographer.latestPost}</p>
+                </div>
             </div>
         );
     }

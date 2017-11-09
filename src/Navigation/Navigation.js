@@ -7,7 +7,7 @@ export default class Navigation extends Component {
                 <div className="container-fluid">
 
                     <div className="navbar-header test">
-                        <a className="navbar-brand" href="#">PHOTOS</a>
+                        <a className="navbar-brand" href="#">XingYing</a>
                     </div>
 
                     <div>
