@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import PhotographerInfo from './PhotographerInfo';
-import PhotographerPhoto from './PhotographerPhoto';
 import _ from 'lodash';
 import UserItem from './UserItem';
 
@@ -17,6 +16,11 @@ export default class Home extends Component {
   //     />
   //   );
   // }
+  constructor(props) {
+    super(props);
+    this.renderUsers = this.renderUsers.bind(this);
+  }
+
 
   renderUsers() {
     const props = _.omit(this.props, 'users');
@@ -59,6 +63,7 @@ export default class Home extends Component {
             <div className="card card-inverse card-primary">
               <h2>Top 10 Users</h2>
               {this.renderUsers()}
+
             </div>
           </div>
         </div>
