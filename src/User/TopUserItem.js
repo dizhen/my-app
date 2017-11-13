@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 export default class TopUserItem extends Component {
     render() {
-        const user = this.props;
+        const user = this.props.user;
         return (
             <div className="row">
                 <div className="col-lg-3">

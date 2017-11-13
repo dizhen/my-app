@@ -8,8 +8,9 @@ export default class TopPhotographerList extends Component {
 
         return _.map(this.props.photographers, (photographer, index) =>
             <TopPhotographerItem
-                key={index} {...photographer} {...props}
-                photographers={this.props.photographers}
+                key={index}
+                photographer={photographer}
+                {...props}
             />
         );
     }

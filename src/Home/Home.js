@@ -9,7 +9,7 @@ export default class Home extends Component {
 
                 <div className="row">
                     <div className="col-lg-9 col-sm-9 col-xs-12 test">
-                        <div className="">
+                        <div className="jumbotron">
                             <h1>Hello, world!</h1>
                             <p>Search over 10000 top photographers in the world. Find the right photographer for your
                                 special occasion. </p>

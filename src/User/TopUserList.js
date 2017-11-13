@@ -8,8 +8,9 @@ export default class TopUserList extends Component {
 
         return _.map(this.props.users, (user, index) =>
             <TopUserItem
-                key={index} {...user} {...props}
-                users={this.props.users}
+                key={index}
+                user={user}
+                {...props}
             />
         );
     }

@@ -2,12 +2,11 @@ import React, {Component} from 'react';
 import ReactStars from 'react-stars';
 import TopPhotographerPhotos from './TopPhotographerPhotos';
 
-export default class PhotographerInfo extends Component {
+export default class TopPhotographerItem extends Component {
     render() {
-        const photographer = this.props;
+        const photographer = this.props.photographer;
         return (
-            <div className="">
-
+            <div>
                 <div className="row">
                     <div className="col-sm-2 test">
                         <img style={{
