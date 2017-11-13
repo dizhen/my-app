@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-export default class PhotographerPhoto extends Component {
+export default class TopPhotographerPhotos extends Component {
     render() {
         return (
             <div>
