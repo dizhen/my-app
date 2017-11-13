@@ -5,9 +5,6 @@ import PhotographerPhoto from './PhotographerPhoto';
 export default class PhotographerInfo extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-            loggedIn:false
-        };
     }
 
     render() {

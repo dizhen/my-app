@@ -106,13 +106,21 @@ const users = [
     }
 ];
 
+
 class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
             photographers,
-            users
+            users,
+            loggedInUser: null
         };
+
+        this.login = this.login.bind(this);
+    }
+
+    login(user) {
+        this.setState({loggedInUser: user});
     }
 
     render() {
@@ -122,6 +130,7 @@ class App extends Component {
                 <Home
                     photographers = {this.state.photographers}
                     users = {this.state.users}
+                    login={this.login}
                 />
                 <Footer/>
             </div>

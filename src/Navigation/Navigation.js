@@ -1,6 +1,10 @@
 import React, {Component} from 'react';
 
 export default class Navigation extends Component {
+    constructor(props) {
+        super(props);
+    }
+
     render() {
         return (
             <nav className="navbar navbar-default">
@@ -11,7 +15,7 @@ export default class Navigation extends Component {
                     </div>
 
                     <div>
-                        <ul className="nav navbar-nav test" >
+                        <ul className="nav navbar-nav test">
                             <li className="active"><a href="#">Home</a></li>
                             <li><a href="#">My profile</a></li>
                             <li><a href="#">My albums</a></li>
@@ -19,8 +23,8 @@ export default class Navigation extends Component {
                     </div>
 
                     <div className="nav navbar-right test">
-                            <button type="submit" className="btn-warning">register</button>
-                            <button type="submit" className="btn-success">sign in</button>
+                        <button type="submit" className="btn-warning">register</button>
+                        <button type="submit" className="btn-success">sign in</button>
                     </div>
                 </div>
             </nav>

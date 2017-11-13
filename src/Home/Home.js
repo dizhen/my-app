@@ -1,11 +1,16 @@
 import React, {Component} from 'react';
 import PhotographerInfo from './PhotographerInfo';
-import PhotographerPhoto from './PhotographerPhoto';
 import _ from 'lodash';
 import UserItem from './UserItem';
 
 export default class Home extends Component {
-    renderPhotographersInfo(){
+    constructor(props) {
+        super(props);
+        this.renderPhotographers = this.renderPhotographers.bind(this);
+        this.renderUsers = this.renderUsers.bind(this);
+    }
+
+    renderPhotographers(){
         const props = _.omit(this.props, 'photographers');
 
         return _.map(this.props.photographers, (photographer, index) =>
@@ -29,8 +34,7 @@ export default class Home extends Component {
 
     render() {
         return (
-            <div className="">
-
+            <div>
                 <div className="row">
                     <div className="col-lg-9 col-sm-9 col-xs-12 test">
                         <div className="jumbotron">
@@ -42,7 +46,6 @@ export default class Home extends Component {
                     </div>
                     <div className="col-lg-3 col-sm-3 col-xs-12 test">
                         Photographer of the week
-                        AI BAO BAO
                     </div>
                 </div>
 
@@ -50,7 +53,7 @@ export default class Home extends Component {
                     <div className="col-lg-9 col-sm-9 col-xs-12 test">
                         <div class="card card-inverse card-primary">
                             <div className="row">
-                                {this.renderPhotographersInfo()}
+                                {this.renderPhotographers()}
                             </div>
                         </div>
                     </div>
