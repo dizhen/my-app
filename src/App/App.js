@@ -106,6 +106,14 @@ const users = [
     }
 ];
 
+const sampleUser = [
+    {
+        id: 0,
+        email: "sample@gmail.com",
+        password: "12345678",
+        name: "Sun"
+    }
+];
 
 class App extends Component {
     constructor(props) {
