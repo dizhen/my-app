@@ -5,6 +5,7 @@
   "dependencies": {
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
+    "react-grid-gallery": "^0.4.7",
     "react-images": "^0.5.11",
     "react-scripts": "1.0.16",
     "react-stars": "^2.2.5"

@@ -25,7 +25,9 @@ export default class TopPhotographerItem extends Component {
                         <p align='center'>{photographer.name}</p>
                     </div>
                     <div className="col-sm-10">
-                        <TopPhotographerPhotos/>
+                        <TopPhotographerPhotos
+                            photos = {photographer.photos}
+                        />
                     </div>
 
                     <div className="col-12">

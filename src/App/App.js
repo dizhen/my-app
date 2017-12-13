@@ -11,7 +11,21 @@ const photographers = [
         rating: 5,
         latestPost: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. " +
         "Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque " +
-        "penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+        "penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+        photos: [
+            {
+                src: "https://placeimg.com/480/480/animals",
+                thumbnail: "https://placeimg.com/480/480/animals",
+                thumbnailWidth: 480,
+                thumbnailHeight: 480,
+            },
+            {
+                src: "https://placeimg.com/480/320/animals",
+                thumbnail: "https://placeimg.com/480/320/animals",
+                thumbnailWidth: 480,
+                thumbnailHeight: 320,
+            }
+        ]
     },
     {
         id: 1,
@@ -20,7 +34,27 @@ const photographers = [
         rating: 4.5,
         latestPost: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. " +
         "Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque " +
-        "penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+        "penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+        photos: [
+            {
+                src: "https://placeimg.com/360/480/animals",
+                thumbnail: "https://placeimg.com/360/480/animals",
+                thumbnailWidth: 360,
+                thumbnailHeight: 480,
+            },
+            {
+                src: "https://placeimg.com/360/360/animals",
+                thumbnail: "https://placeimg.com/360/360/animals",
+                thumbnailWidth: 360,
+                thumbnailHeight: 360,
+            },
+            {
+                src: "https://placeimg.com/240/360/animals",
+                thumbnail: "https://placeimg.com/240/360/animals",
+                thumbnailWidth: 240,
+                thumbnailHeight: 360,
+            },
+        ]
     },
     {
         id: 2,
@@ -29,7 +63,21 @@ const photographers = [
         rating: 4,
         latestPost: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. " +
         "Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque " +
-        "penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+        "penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+        photos: [
+            {
+                src: "https://placeimg.com/320/320/animals",
+                thumbnail: "https://placeimg.com/320/320/animals",
+                thumbnailWidth: 320,
+                thumbnailHeight: 320,
+            },
+            {
+                src: "https://placeimg.com/480/320/animals",
+                thumbnail: "https://placeimg.com/480/320/animals",
+                thumbnailWidth: 320,
+                thumbnailHeight: 212,
+            }
+        ]
     }
 ];
 
@@ -103,15 +151,6 @@ const users = [
         rank: 10,
         followersCount: 2900
 
-    }
-];
-
-const sampleUser = [
-    {
-        id: 0,
-        email: "sample@gmail.com",
-        password: "12345678",
-        name: "Sun"
     }
 ];
 

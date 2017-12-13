@@ -1,18 +1,19 @@
 import React, {Component} from 'react';
-import Lightbox from 'react-images';
+import Gallery from 'react-grid-gallery';
 
-const images = [
-    {
-        src: "https://placeimg.com/480/480/animals",
-        orientation: 'square',
-        caption: 'Photo by Shawn',
-    },
-    {
-        src: "https://placeimg.com/480/320/animals",
-        orientation: 'landscape',
-        caption: 'Photo by Jane',
-    }
-];
+export default class TopPhotographerPhotos extends Component {
+    render() {
+        return (
+            <Gallery
+                images = {this.props.photos}
+            />
+        );
+    };
+}
+
+
+/**import React, {Component} from 'react';
+import Lightbox from 'react-images';
 
 const gutter = {
     small: 2,
@@ -104,7 +105,7 @@ export default class TopPhotographerPhotos extends Component {
     }
 
     renderGallery() {
-        const gallery = images.map((obj, i) => {
+        const gallery = this.props.photos.map((obj, i) => {
             //console.log(obj);
             return (
                 <a
@@ -126,12 +127,13 @@ export default class TopPhotographerPhotos extends Component {
     }
 
     render() {
+        const photos = this.props.photos;
         return (
             <div>
                 {this.renderGallery()}
                 <Lightbox
                     currentImage={this.state.currentImage}
-                    images={images}
+                    images={photos}
                     onClickNext={this.gotoNext}
                     onClickPrev={this.gotoPrevious}
                     isOpen={this.state.lightboxIsOpen}
@@ -139,4 +141,4 @@ export default class TopPhotographerPhotos extends Component {
             </div>
         );
     }
-}
+}**/

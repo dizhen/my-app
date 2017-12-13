@@ -45,7 +45,6 @@ export default class Navigation extends Component {
             <div className="row test">
                 <nav className="navbar navbar-default">
 
-
                     <div className="navbar-header test">
                         <a className="navbar-brand" href="#">XingYing</a>
                     </div>
@@ -61,6 +60,7 @@ export default class Navigation extends Component {
                     <div className="nav navbar-right test">
                         {this.renderLogInSection()}
                     </div>
+
                 </nav>
             </div>
         );
