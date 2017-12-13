@@ -20,8 +20,9 @@ export default class TopUserItem extends Component {
                     <p><span className="glyphicon glyphicon-fire"></span>{user.followersCount}</p>
                 </div>
                 <div className="col-lg-4" align="right">
-                    <button type="submit" className="btn btn-default">
-                        <span className="glyphicon glyphicon-plus"></span> + follow
+                    <button
+                        className="btn btn-default">
+                        + follow
                     </button>
                 </div>
             </div>
