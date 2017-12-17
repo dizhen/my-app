@@ -174,11 +174,13 @@ class App extends Component {
         return (
             <div className="container-fluid">
                 <Navigation/>
+
                 <Home
                     photographers = {this.state.photographers}
                     users = {this.state.users}
                     login={this.login}
                 />
+
                 <Footer/>
             </div>
         );

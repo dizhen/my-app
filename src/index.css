@@ -2,9 +2,27 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background-color: #f7f7f7;
+  color: #494949;
+}
+
+div p {
+  padding: 0;
+  margin: 0;
 }
 
 
 .test {
-  border: 1px red solid;
 }
+
+.x-card-block {
+}
+
+footer {
+  background-color: #282728;
+  height: 11em;
+  margin: -15px;
+  position: relative;
+  color: #adadad;
+}
+
