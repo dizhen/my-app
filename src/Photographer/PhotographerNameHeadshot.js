@@ -24,7 +24,7 @@ export default class PhotographerNameHeadshot extends Component {
              src={require("../Home/blank-profile-picture.png")}
              alt="photographer profile"
         />
-        <ReactStars value={photographer.rating}/>
+        <div style={{display: 'inline-block'}}><ReactStars value={photographer.rating}/></div>
         <p>{photographer.name}</p>
       </div>
     );
