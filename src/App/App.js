@@ -4,7 +4,7 @@ import Navigation from '../Navigation/Navigation';
 import Footer from '../Footer/Footer';
 
 const superPhotographer = {
-    name: 'Jared',
+    name: '理查德',
     style: 'family',
     rating: 5,
     latestPost: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. " +

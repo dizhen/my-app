@@ -11,7 +11,8 @@ const styles = {
     borderRadius: 75
   },
   size: {
-    minWidth: '102px'
+    minWidth: '102px',
+    lineHeight: '1.2'
   }
 };
 
@@ -24,8 +25,8 @@ export default class PhotographerNameHeadshot extends Component {
              src={require("../Home/blank-profile-picture.png")}
              alt="photographer profile"
         />
-        <div style={{display: 'inline-block'}}><ReactStars value={photographer.rating}/></div>
-        <p>{photographer.name}</p>
+        <p style={{display: 'inline-block'}}><ReactStars value={photographer.rating}/></p>
+        <p className="mb-2">{photographer.name}</p>
       </div>
     );
   }
