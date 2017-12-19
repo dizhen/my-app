@@ -19,7 +19,7 @@ export default class Home extends Component {
                             maxHeight: '500px',
                             width: '100%',
                         }}
-                             src={require('../Res/Img/world.jpg')}
+                             src={require('../Res/Img/world_map_2.png')}
                              alt="user profile"
                         />
                     </div>
