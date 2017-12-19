@@ -6,6 +6,8 @@ export default class TopPhotographerPhotos extends Component {
         return (
             <Gallery
                 images = {this.props.photos}
+                enableImageSelection={false}
+                maxRows = {3}
             />
         );
     };

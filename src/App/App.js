@@ -3,6 +3,29 @@ import Home from '../Home/Home';
 import Navigation from '../Navigation/Navigation';
 import Footer from '../Footer/Footer';
 
+const superPhotographer = {
+    name: 'Jared',
+    style: 'family',
+    rating: 5,
+    latestPost: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. " +
+    "Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque " +
+    "penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+    photos: [
+        {
+            src: "https://placeimg.com/640/480/animals",
+            thumbnail: "https://placeimg.com/640/480/animals",
+            thumbnailWidth: 640,
+            thumbnailHeight: 480,
+        },
+        {
+            src: "https://placeimg.com/480/320/animals",
+            thumbnail: "https://placeimg.com/480/320/animals",
+            thumbnailWidth: 480,
+            thumbnailHeight: 320,
+        }
+    ]
+};
+
 const photographers = [
     {
         id: 0,
@@ -158,6 +181,7 @@ class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            superPhotographer,
             photographers,
             users,
             loggedInUser: null
@@ -176,6 +200,7 @@ class App extends Component {
                 <Navigation/>
 
                 <Home
+                    superPhotographer = {this.state.superPhotographer}
                     photographers = {this.state.photographers}
                     users = {this.state.users}
                     login={this.login}
