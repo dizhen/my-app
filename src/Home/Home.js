@@ -11,12 +11,11 @@ export default class Home extends Component {
 
         return (
             <div>
-                <h1 className="text-center my-sm-3">星影部落，中国最大的摄影师与用户对接平台</h1>
+                <h1 className="text-center my-4">星影部落，全球最大的摄影师与用户对接平台</h1>
                 <div className="row">
                     <div className="col-lg-9 col-sm-9 col-xs-12 test">
-
                         <img style={{
-                            maxHeight: '500px',
+                            maxHeight: '480px',
                             width: '100%',
                         }}
                              src={require('../Res/Img/world_map_2.png')}
@@ -26,10 +25,6 @@ export default class Home extends Component {
 
                     <div className="col-lg-3 col-sm-3 col-xs-12 test">
                         <SuperPhotographerContainer
-                            style={{
-                                maxHeight: '500px',
-                                width: '100%',
-                            }}
                             superPhotograsher={superPhotographer}
                         />
                     </div>

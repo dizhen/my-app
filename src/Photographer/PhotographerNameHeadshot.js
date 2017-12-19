@@ -7,6 +7,7 @@ const styles = {
     flex: 1,
     height: 100,
     width: 100,
+
     borderWidth: 1,
     borderRadius: 75
   },
@@ -22,7 +23,7 @@ export default class PhotographerNameHeadshot extends Component {
     return (
       <div className="test text-center" style={styles.size}>
         <img style={styles.headshotStyle}
-             src={require("../Home/blank-profile-picture.png")}
+             src={photographer.profileImg}
              alt="photographer profile"
         />
         <p style={{display: 'inline-block'}}><ReactStars value={photographer.rating}/></p>
