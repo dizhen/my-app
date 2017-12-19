@@ -20,8 +20,8 @@ div p {
 
 footer {
   background-color: #282728;
-  height: 11em;
-  margin: -15px;
+  height: 12em;
+  /*margin: -15px;*/
   position: relative;
   color: #adadad;
 }
