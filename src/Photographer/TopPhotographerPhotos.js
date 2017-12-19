@@ -7,7 +7,9 @@ export default class TopPhotographerPhotos extends Component {
             <Gallery
                 images = {this.props.photos}
                 enableImageSelection={false}
-                maxRows = {3}
+                maxRows = {2}
+                rowHeight={110}
+                margin={4}
             />
         );
     };
