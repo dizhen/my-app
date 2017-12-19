@@ -26,7 +26,7 @@ export default class PhotographerNameHeadshot extends Component {
              src={photographer.profileImg}
              alt="photographer profile"
         />
-        <p style={{display: 'inline-block'}}><ReactStars value={photographer.rating}/></p>
+        <p style={{display: 'inline-block'}}><ReactStars value={photographer.rating} edit={false}/></p>
         <p className="mb-2">{photographer.name}</p>
       </div>
     );
